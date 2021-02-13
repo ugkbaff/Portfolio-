@@ -1,0 +1,133 @@
+
+html {
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, sans-serif ,Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+
+}
+@media (max-width: 600px) {
+  #navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+    a:hover{
+        background-color: lightblue;
+    }
+  /* Navbar links */
+  #navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:lightblue;
+    
+}
+.name{
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
+
+.job{
+    font-size: 25px;
+    color: rgb(109, 90, 109);
+    font-family: cursive;
+  }
+
+/*
+img {
+  width: 50%;
+  height: auto;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+}
+
+#projects{
+  background-color: #be3144;
+}
+*/
+
+#hero{
+  background-color: #333;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.work{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  padding-left: 15px;
+}
+.coffee{
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+}
+
+.hr{
+  border-top: 3px solid lightblue; 
+}
+#footer{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  padding: 20px;
+}
+.p1{
+  padding-right: 5%;
+}
